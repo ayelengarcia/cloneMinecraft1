@@ -22,6 +22,10 @@ function App () {
         </Physics>
       </Canvas>
       <TextureSelect />
+      <div className='info'>
+        <p>Presione ESC para ver el cursor</p>
+        <p>Presione ESC nuevamente para ver el menu</p>
+      </div>
       <div className='pointer'>+</div>
       <Menu />
     </>

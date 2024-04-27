@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 *{
   box-sizing: border-box;
-
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
 html, body, #root{
@@ -62,25 +66,77 @@ body{
 
 .menu{
     position: absolute;
-    top: 20px;
-    left: 20px;
+    background: url("https://i.pinimg.com/564x/a6/f9/93/a6f993903ed579b0e7cc4d49867bfcfe.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0px;
     display: flex;
     gap: 10px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .btn_menu{
+    width: 100px;
     padding: 5px 10px;
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 14px;
     letter-spacing: 1px;
     cursor: pointer;
     color: white;
-    background: #151d45d3;
+    background: #080b1ad3;
     border: none;
     border-radius: 3px;
 }
 
 .btn_menu:hover{
-    background: #151d45;
+    background: #070a18;
     transition: .5s;
+}
+
+.ocultarMenu{
+  display: none;
+}
+
+.info{
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  background-color: #2727277e;
+  color: rgb(141, 141, 141);
+  padding: 5px;
+}
+
+.info>p{
+  padding: 0px;
+  margin: 0px;
+  font-size: 12px;
+}
+
+.contain_controles{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 20px;
+  color: white;
+  background: #080b1ad3;
+  border-radius: 5px;
+}
+
+.subcontain_controles{
+  display: flex;
+  gap: 20px;
+  padding: 0px 15px 10px;
+}
+
+.contain_buttons{
+  display: flex;
+  gap: 10px;
+}
+
+h2{
+  margin-bottom: 0px;
 }
