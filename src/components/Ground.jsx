@@ -24,7 +24,7 @@ export const Ground = () => {
       ref={ref}
     >
       <TerrainGenerator />
-      <planeGeometry attach='geometry' args={[25, 25]} />
+      <planeGeometry attach='geometry' args={[100, 100]} />
       <meshStandardMaterial attach='material' map={groundTexture} />
     </mesh>
   )
