@@ -1,6 +1,7 @@
 import { usePlane } from '@react-three/cannon'
-import { groundTexture } from '../images/textures.js'
+// import { groundTexture } from '../images/textures.js'
 import { useStore } from '../hooks/useStore.jsx'
+import { TerrainGenerator } from './TerrainGenerator.jsx'
 
 export const Ground = () => {
   const [ref] = usePlane(() => ({
@@ -22,8 +23,9 @@ export const Ground = () => {
       onClick={handleClickGround}
       ref={ref}
     >
-      <planeGeometry attach='geometry' args={[100, 100]} />
-      <meshStandardMaterial attach='material' map={groundTexture} />
+      <TerrainGenerator />
+      {/* <planeGeometry attach='geometry' args={[100, 100]} />
+      <meshStandardMaterial attach='material' map={groundTexture} /> */}
     </mesh>
   )
 }

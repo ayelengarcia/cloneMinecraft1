@@ -50,7 +50,7 @@ export const Cube = ({ id, position, texture }) => {
       onPointerOut={(e) => handleHover(e, false)}
       ref={ref}
     >
-      <boxGeometry attach='geometry' />
+      <boxGeometry attach='geometry' args={[1, 1, 1]} />
       <meshStandardMaterial color={isHovered ? 'grey' : 'white'} transparent attach='material' map={activeTexture} />
     </mesh>
   )
