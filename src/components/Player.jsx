@@ -15,7 +15,7 @@ export const Player = () => {
   const [ref, api] = useSphere(() => ({
     mass: 1,
     type: 'Dynamic',
-    position: [-10, 10, -10]
+    position: [-12, 10, -12]
   }))
 
   // Copio la posicision del pj
