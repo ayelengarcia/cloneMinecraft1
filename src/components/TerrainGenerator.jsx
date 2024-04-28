@@ -8,7 +8,7 @@ export const TerrainGenerator = () => {
   useEffect(() => {
     for (let x = -10; x < 10; x++) {
       for (let z = -10; z < 10; z++) {
-        for (let y = -1; y < 0; y++) {
+        for (let y = 0; y < 1; y++) {
           addCube(x, y, z)
         }
       }

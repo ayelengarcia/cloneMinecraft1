@@ -1,5 +1,5 @@
 import { usePlane } from '@react-three/cannon'
-// import { groundTexture } from '../images/textures.js'
+import { groundTexture } from '../images/textures.js'
 import { useStore } from '../hooks/useStore.jsx'
 import { TerrainGenerator } from './TerrainGenerator.jsx'
 
@@ -24,8 +24,8 @@ export const Ground = () => {
       ref={ref}
     >
       <TerrainGenerator />
-      {/* <planeGeometry attach='geometry' args={[100, 100]} />
-      <meshStandardMaterial attach='material' map={groundTexture} /> */}
+      <planeGeometry attach='geometry' args={[25, 25]} />
+      <meshStandardMaterial attach='material' map={groundTexture} />
     </mesh>
   )
 }
